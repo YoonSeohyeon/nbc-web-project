@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>(구)카카오톡 프로필 화면</title>
+
+    <style>
+        .total_box {
+            width: 480px;
+            height: 800px;
+            border: 1px solid lightgrey;
+
+            margin: 50px auto;
+        }
+        .profile_box {
+            position: absolute;
+            top:480px;
+            left:685px;
+            width: 150px;
+            height: 150px;
+            border-radius: 70%;
+            overflow: hidden;
+        }
+        .profile_img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .upper_box {
+            width: 480px;
+            height: 500px;
+            background-color: pink;
+
+            text-align: center;
+            margin: auto;
+
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .message_box {
+            width: 380px;
+            height: 500px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            color: white;
+        }
+        .bottom_box {
+            width: 480px;
+            height: 250px;
+
+            padding-top: 50px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .btns {
+            width: 300px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .chatting-icon {
+            text-align: center;
+        }
+        .setting-icon {
+            text-align: center;
+        }
+        .story-icon {
+            text-align: center;
+        }
+        .chat_img{
+            width: 50px;
+            height: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class = "total_box">
+        <div class = "upper_box">
+            <div class = "message_box">
+                <hr width="50">
+            <h5>안녕하세요. 저는 또치입니다! 저는 아프리카에서 온 암컷 타조에요. 원래는 라스베가스 서커스단에서 일했는데, 너무 힘들어서 관두고 둘리 일당에 합류했답니다!</h5>
+            </div>
+
+        </div>
+
+        <div class = "profile_box">
+            <img class = "profile_img" src = "data:image/jpeg;base64,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">
+        </div>
+
+        <div class = "bottom_box">
+            <h4>또치</h4>
+            <div class = "btns">
+                <div class = "chatting-icon">
+                    <img class = "chat_img" src="https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa1e986b0-d5ab-4e8c-b328-3e3778f3077e%2F%E1%84%82%E1%85%A1%E1%84%8B%E1%85%AA%E1%84%8B%E1%85%B4_%E1%84%8E%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC.png?table=block&id=4a6c975c-1560-46fe-9b0e-ab9316f06cc1&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=240&userId=&cache=v2">
+                    <h6>나와의 채팅</h6>
+                </div>
+                <div class = "setting-icon">
+                    <img class = "chat_img" src="https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb5528682-60d4-423e-94c9-df051a14ff65%2F%E1%84%8F%E1%85%A1%E1%84%89%E1%85%B3.png?table=block&id=6497fccb-8352-448f-86b0-c61e8b26ff29&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=240&userId=&cache=v2">
+                    <h6>프로필 관리</h6>
+                </div>
+                <div class = "story-icon">
+                    <img class = "chat_img" src="https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3f47f9b4-ddb6-4273-b844-89ce402ecdbe%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%91%E1%85%B5%E1%86%AF%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5.png?table=block&id=0846c90b-1d2e-452b-8a11-cc2b3740aa3f&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=2000&userId=&cache=v2">
+                    <h6>카카오스토리</h6>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
